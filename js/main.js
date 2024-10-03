@@ -14,3 +14,13 @@ function toggleResources() {
 function boldHoveredItem(event) {
     event.target.style.fontWeight = 'bold';
   }
+
+// remove bold 
+function unboldHoveredItem(event) {
+    event.target.style.fontWeight = 'normal';
+  }
+
+// italicize clicked item 
+function italicizeClickedItem(event) {
+    event.target.style.fontStyle = 'italic';
+  }
