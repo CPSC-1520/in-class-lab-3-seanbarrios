@@ -27,3 +27,15 @@ function italicizeClickedItem(event) {
 
 // new event listener, toggle resources when clicked
 showResourcesButton.addEventListener('click', toggleResources);
+
+// add event listeners to each list item
+listItems.forEach(item => {
+    // hover event to bold text
+    item.addEventListener('mouseover', boldHoveredItem);
+    
+    // mouseout event to revert to normal text
+    item.addEventListener('mouseout', unboldHoveredItem);
+    
+    // click event to italicize text
+    item.addEventListener('click', italicizeClickedItem);
+  });
