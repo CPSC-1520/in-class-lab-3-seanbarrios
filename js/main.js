@@ -24,3 +24,6 @@ function unboldHoveredItem(event) {
 function italicizeClickedItem(event) {
     event.target.style.fontStyle = 'italic';
   }
+
+// new event listener, toggle resources when clicked
+showResourcesButton.addEventListener('click', toggleResources);
